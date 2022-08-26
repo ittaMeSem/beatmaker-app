@@ -34,35 +34,35 @@ svg {
 }
 
 .kick-pad {
-    background: #73daff;
+    background: #91e2ff;
 }
 
 .snare-pad {
-    background: #e2afff;
+    background: #e8c1ff;
 }
 
 .hihat-pad {
-    background: #ffda73;
+    background: #ffe6a1;
 }
 
 .clap-pad {
-    background: #92ffac;
+    background: #b4ffc5;
 }
 
 .kick-pad.active {
-    background: #30c8ff;
+    background: #00bbff;
 }
 
 .snare-pad.active {
-    background: #c96cff;
+    background: #b12aff;
 }
 
 .hihat-pad.active {
-    background: #ffcc41;
+    background: #ffbf10;
 }
 
 .clap-pad.active {
-    background: #48ff73;
+    background: #06ff40;
 }
 
 .kick-track,
@@ -119,4 +119,41 @@ select {
     padding: 1rem;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.mute.active {
+    background: rgb(164, 164, 164);
+}
+
+
+.tempo {
+    margin: 3rem;
+    width: 30%;
+}
+
+.tempo-slider {
+    padding: 0.2rem;
+    --webkit-appearance: none;
+    margin: 1rem 0rem;
+    width: 100%;
+    position: relative;
+    background: #585858;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.tempo p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+@keyframes playTrack {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
 }
